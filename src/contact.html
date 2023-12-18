@@ -7,83 +7,119 @@
 
     <meta name="keywords" content="Emran, Digital Portfolio, Projects, Learning Journal, Meme Generator, Quiz App, Mobile Restaurant App, Movie Watch-List, HTML, CSS, JavaScript, React, Web Development">
     <meta name="author" content="Emran Yonas">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <meta name="robots" content="index, follow">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contact Me - Digital Portfolio</title>
 </head>
 <body>
-    <header>
-        <div>
-            <h1>Digital <span>Portfolio</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><i class="fas fa-house-chimney"></i><a href="index.html">Home</a></li>
-                <li><i class="fas fa-user"></i><a href="about.html">About</a></li>
-                <li><i class="fas fa-microscope"></i><a href="skills.html">Skills</a></li>
-                <li><i class="fas fa-boxes-stacked"></i><a href="projects.html">Projects</a></li>
-                <li><i class="fas fa-address-book"></i><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </header>
-    <main>
-        <div>
-            <h2>Contact Me</h2>
-            <div>
-                <i class="fa-regular fa-envelope"></i>
-                <a href="mailto:emran.yonas@aait.edu.et">Contact@emran.yonas@aait.edu.et</a>
+  <header class="mb-6">
+    <nav class="navbar is-dark has-background-black has-border-bottom has-shadow is-fixed-top">
+      <div class="navbar-brand">
+        <span class="navbar-item">
+          <h1 class="has-text-warning is-size-3 has-text-weight-bold">
+            Digital <span class="is-block has-text-white">Portfolio</span>
+                </h1>
+              </span>
+              <a class="navbar-burger mt-auto mb-auto is-size-1" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </a>
             </div>
-            <div>
-                <i class="fa-solid fa-phone"></i>
-                <a href="tel:+251988216467">+251 988 216 467</a>
+            
+            <div class="navbar-menu" id="nav-links">
+              <div class="navbar-end">
+                <a href="index.html" class="navbar-item"><i class="fas mr-2 fa-house-chimney"></i>Home</a>
+                <a href="about.html" class="navbar-item"><i class="fas  mr-2  fa-user"></i> About</a>
+                <a href="skills.html" class="navbar-item"><i class="fas  mr-2   fa-microscope"></i> Skills</a>
+                <a href="projects.html" class="navbar-item"><i class="fas  mr-2  fa-boxes-stacked"></i> Projects</a>
+                <a href="contact.html" class="navbar-item"><i class="fas  mr-2   fa-address-book"></i> Contact</a>
+              </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#"> <i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#"> <i class="fab fa-linkedin-in"></i>LinkedIn</a></li>
-                    <li><a href="#"> <i class="fa-brands fa-facebook"></i> Facebook</a></li> 
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </nav>
+        </header>
+        <main class="section pt-6">
+          <div class="container">
+            <h2 class="title pt-6">Contact Me</h2>
+            <div id="emran"></div>
+          <div class="columns is-multiline">
+            <div class="column is-12">
+              <i class="far fa-envelope"></i>
+              <a class="has-text-black is-size-7-mobile" href="mailto:emran.yonas@aait.edu.et">Contact@emran.yonas@aait.edu.et</a>
+            </div>
+            <div class="column is-12">
+              <i class="fas fa-phone"></i>
+              <a class="has-text-black" href="tel:+251988216467">+251 988 216 467</a>
+            </div>
+            <div class="column is-12">
+              <nav>
+                <ul class="is-flex justify-items-flex-start is-flex-wrap-wrap">
+                  <li class="m-1" ><a class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-text-black box" href="#" class="has-text-info"> <i class="fab fa-twitter"></i> Twitter</a></li>
+                  <li class="m-1" ><a class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-text-black box" href="#" class="has-text-link"> <i class="fab fa-linkedin-in"></i> LinkedIn</a></li>
+                  <li class="m-1" ><a class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-text-black box" href="#" class="has-text-primary"> <i class="fab fa-facebook"></i> Facebook</a></li>
+                  <li class="m-1" ><a class="is-flex is-flex-direction-column is-justify-content-center is-align-items-center has-text-black box" href="#" class="has-text-danger"><i class="fab fa-instagram"></i> Instagram</a></li>
                 </ul>
-            </nav>
-            <form>
-                <input required type="text" name="Name" placeholder="Your Name">
-                <input required type="email" name="Email" placeholder="Your Email">
-                <textarea required name="Message" placeholder="Your Message"></textarea>
-                <button type="submit">Submit</button>
-            </form>
+              </nav>
+            </div>
+            <div class="column is-12">
+              <form id="myForm">
+                <div class="field">
+                  <label class="label">Your Name</label>
+                  <div class="control">
+                    <input class="input" type="text" name="Name" placeholder="Your Name">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Your Email</label>
+                  <div class="control">
+                    <input class="input" type="email" name="Email" placeholder="Your Email">
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="label">Your Message</label>
+                  <div class="control">
+                    <textarea class="textarea" name="Message" placeholder="Your Message"></textarea>
+                  </div>
+                </div>
+                <div class="control">
+                  <span id="messageOnSubmit"></span>
+                  <button  type="submit" class="button is-black">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    <footer class="is-dark has-background-black has-shadow">
+        <hr class="has-background-white">
+        <div class="px-2 pt-5">
+            <h1 class="has-text-warning is-size-3 has-text-weight-bold  has-text-left">Digital <span class="is-block has-text-white">Portfolio</span></h1>
         </div>
         
-    </main>
-    <footer>
-        <div>
-            <h1>Digital <span>Portfolio</span></h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="https://twitter.com/Emran_Yonas"><i class="fab fa-twitter"></i> <span>Twitter</span></a></li>
-                <li><a href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/"><i class="fab fa-linkedin-in"></i> <span>LinkedIn</span> </a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i> <span>Instagram</span></a></li>
+  
+        <nav class="is-flex is-justify-content-flex-start mt-4 mb-4 px-2">
+            <ul class="is-flex is-justify-content-space-between">
+                <li><a href="https://twitter.com/Emran_Yonas" class="mr-5 is-flex is-flex-direction-column is-justify-content-space-between has-text-white is-size-3 is-align-items-center"><i class="fab fa-twitter"></i> <span class="has-text-weight-light is-size-7">Twitter</span></a></li>
+                <li><a href="https://www.linkedin.com/in/emran-yonas-yimer-230192232/" class="mr-5 is-flex is-flex-direction-column is-justify-content-space-between has-text-white is-size-3 is-align-items-center"><i class="fab fa-linkedin-in"></i> <span class="has-text-weight-light is-size-7">LinkedIn</span> </a></li>
+                <li><a href="#" class="is-flex is-flex-direction-column is-justify-content-space-between has-text-white is-size-3 is-align-items-center"><i class="fab fa-instagram"></i> <span class="has-text-weight-light is-size-7">Instagram</span></a></li>
             </ul>
         </nav>
-        
-        <section>
-            <h3>Quick Links</h3>
-            <nav>
+        <hr class="has-background-warning px-2"/>
+        <section class="px-2">
+            <h3 class="is-size-4 has-text-white mb-3">Quick Links</h3>
+            <nav class="mb-3">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="index.html" class="has-text-weight-light is-size-5 has-text-white ">Home</a></li>
+                    <li><a href="skills.html" class="has-text-weight-light is-size-5 has-text-white">Skills</a></li>
+                    <li><a href="projects.html"  class="has-text-weight-light is-size-5 has-text-white">Projects</a></li>
+                    <li><a href="contact.html"  class="has-text-weight-light is-size-5 has-text-white">Contact Me</a></li>
                 </ul>
             </nav>
             
         </section>
-        <div>&copy; Copyright 2023 Emran</div>
+        <div class="has-background-grey-darker has-text-white is-subtitle has-text-centered py-5 has-text-weight-light">&copy; Copyright 2023 Emran</div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
